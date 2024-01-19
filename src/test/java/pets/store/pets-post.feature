@@ -5,13 +5,13 @@ Feature: Admin Pet Store
     * url 'https://petstore.swagger.io/v2'
     * def bodyPet = read("bodyPet.json")
     * def bodyPet = read("bodyPet.json")
-
+  @AddPet
   Scenario: Add new Pet Successfully
     Given path 'pet'
     And request bodyPet
     When method POST
     Then status 200
-
+  @FindPet
   Scenario: Find pet by ID
     Given path 'pet'
     And request bodyPet
@@ -22,7 +22,7 @@ Feature: Admin Pet Store
     Given path 'pet',idPet
     When method GET
     Then status 200
-
+  @UpdatePet
   Scenario: Update name and status of a pet
     Given path 'pet'
     And request bodyPet
@@ -35,7 +35,7 @@ Feature: Admin Pet Store
     And request newPet
     When method PUT
     Then status 200
-
+  @FindByStatus
   Scenario: Find pet by status
     Given path 'pet'
     And request bodyPet
