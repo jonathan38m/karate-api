@@ -6,3 +6,4 @@ target/
 .vscode/
 build/
 .gradle
+!gradle/wrapper/gradle-wrapper.jar
