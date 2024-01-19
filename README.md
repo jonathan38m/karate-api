@@ -34,6 +34,7 @@ Información adicional: El proyecto cuenta con un gradle wrapper por lo que solo
 ```
 .\gradlew test    
 ```
+Luego de ejecutar el comando se creará la siguente ruta dentro del proyecto "target\cucumber-html-reports" donde se econtrarán todos los resultados de las pruebas realizadas
 
 ## Colaboración
 ***
