@@ -19,7 +19,7 @@ public class PetsTest {
     @Test
     void testParallel() {
         Results results = Runner.path("classpath:pets")
-                //.outputCucumberJson(true)
+                .outputCucumberJson(true)
                 .parallel(5);
         generateReport(results.getReportDir());
         assertEquals(0, results.getFailCount(), results.getErrorMessages());
